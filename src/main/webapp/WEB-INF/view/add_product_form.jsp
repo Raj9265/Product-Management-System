@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container mt-3">
+	<div class="container mt-3">
 
 		<div class="row">
 
@@ -17,7 +17,8 @@
 
 				<h1 class="text-center mb-3">Fill the product detail</h1>
 
-				<form action="handle-product.html" method="post" modelAttribute="key1">
+				<form action="handle-product.html" method="post"
+					modelAttribute="key1">
 					<div class="form-group">
 						<label for="name">Product Name</label> <input type="text"
 							class="form-control" id="name" aria-describedby="emailHelp"
@@ -42,7 +43,7 @@
 
 					<div class="container text-center">
 
-					<%-- 	<a href="${pageContext.request.contextPath }/"
+						<%-- 	<a href="${pageContext.request.contextPath }/"
 							class="btn btn-outline-danger">Back</a> --%>
 
 

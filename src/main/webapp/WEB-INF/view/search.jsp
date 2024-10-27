@@ -30,11 +30,12 @@
 								<td>${p.name }</td>
 								<td>${p.description }</td>
 								<td class="font-weight-bold">&#x20B9; ${p.price }</td>
-								<td>
-								<a href="delete.html?id=${p.id}"><i class="fas fa-trash text-danger" style="font-size: 30px;"></i></a>
-								<a href="edit.html?id=${p.id}"><i class="fas fa-pen-nib text-primary" style="font-size: 30px;"></i></a>
-							
-								
+								<td><a href="delete.html?id=${p.id}"><i
+										class="fas fa-trash text-danger" style="font-size: 30px;"></i></a>
+									<a href="edit.html?id=${p.id}"><i
+										class="fas fa-pen-nib text-primary" style="font-size: 30px;"></i></a>
+
+
 								</td>
 							</tr>
 						</c:forEach>

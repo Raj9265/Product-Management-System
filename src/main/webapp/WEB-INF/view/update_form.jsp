@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-     <%@taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+	pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container mt-3">
+	<div class="container mt-3">
 
 		<div class="row">
 
@@ -18,7 +18,8 @@
 
 				<h1 class="text-center mb-3">Change Product Details</h1>
 
-				<f:form action="handle-product.html" method="post" modelAttribute="key2">
+				<f:form action="handle-product.html" method="post"
+					modelAttribute="key2">
 
 					<%-- <input type="hidden" value="${product.id}" name="id" /> --%>
 					<f:hidden path="id" />
@@ -27,7 +28,9 @@
 						<%--  <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
 							name="name" placeholder="Enter the product name here"
 							value="${product.name }"> --%>
-							<f:input path="name" class="form-control" aria-describedby="emailHelp" placeholder="Enter the product name here" />
+						<f:input path="name" class="form-control"
+							aria-describedby="emailHelp"
+							placeholder="Enter the product name here" />
 					</div>
 
 
@@ -37,22 +40,24 @@
 						<%-- <textarea class="form-control" name="description" id="description"
 							rows="5" placeholder="Enter the product description">${product.description }
 							</textarea> --%>
-							<f:input path="description" class="form-control" rows="5" placeholder="Enter the product description" />
+						<f:input path="description" class="form-control" rows="5"
+							placeholder="Enter the product description" />
 					</div>
 
 
 
 					<div class="form-group">
 						<label for="price">Product Price</label>
-						 <%-- <input type="text"
+						<%-- <input type="text"
 							placeholder="Enter Product Price" name="price"
 							class="form-control" id="price" value="${product.price }"> --%>
-							<f:input path="price" placeholder="Enter Product Price" class="form-control" />
+						<f:input path="price" placeholder="Enter Product Price"
+							class="form-control" />
 					</div>
 
 					<div class="container text-center">
 
-					
+
 
 
 						<button type="submit" class="btn btn-warning">Update</button>

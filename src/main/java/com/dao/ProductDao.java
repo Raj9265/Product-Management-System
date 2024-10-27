@@ -1,4 +1,4 @@
-package productcrudapp.dao;
+package com.dao;
 
 import java.util.List;
 import org.hibernate.Query;
@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import productcrudapp.model.Product;
+import com.model.Product;
 
 @Repository
 public class ProductDao {
